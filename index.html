@@ -4,39 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css\styles.css">
+    <script src="js\script.js" defer></script>
 </head> 
 
 <body>
 
     <!-- Judul Website -->
-    <div class="judul">
+    <div class="container">
         <h1>Kalkulator BMI</h1>
 
         <!-- Form Kalkulator -->
-        <form class="kalkulator">
+        <form class="calculator">
             <div>
-                <p class="jeniskelamin">Jenis Kelamin</p>
-                <input type="radio" id="pria" name="jeniskelamin" value="Pria">
+                <p class="gender">Jenis Kelamin</p>
+                <input type="radio" id="pria" name="gender" value="Pria">
                 <label for="pria">Pria</label>
-                <input type="radio" id="wanita" name="jeniskelamin" value="Wanita">
+                <input type="radio" id="wanita" name="gender" value="Wanita">
                 <label for="wanita">Wanita</label><br>
             </div>
 
             <div>
-                <label for="usia"> Usia (tahun)</label>
-                <input type="number" id="usia" min="0" step="1" value="0"/>
+                <label for="age"> Usia (tahun)</label>
+                <input type="number" id="age" min="0" step="1" value="0"/>
             </div>
 
             <div>
-                <label for="berat-badan">Berat (kg)</label>
-                <input type="number" id="berat-badan" min="0" step="0.01" value="0"/>
+                <label for="weight">Berat (kg)</label>
+                <input type="number" id="weight" min="0" step="0.01" value="0"/>
             </div>
 
             <div>
-                <label for="tingi-badan">Tinggi (cm)</label>
-                <input type="number" id="tingi-badan" min="0" step="0.01" value="0"/>
+                <label for="height">Tinggi (cm)</label>
+                <input type="number" id="height" min="0" step="0.01" value="0"/>
             </div>
 
             <div>
@@ -46,31 +47,31 @@
         </form>
 
     <!--  Hasil Kalkulator -->
-    <section class="hasil">
+    <section class="output">
         <h3>Hasil BMI Anda Adalah</h3>
         <p id="bmi">0</p>
         <p id="desc">N/A</p>
     </section>
 
-    <section class="skala-bmi">
+    <section class="bmi-scale">
         <div style="--color: var(--underweight)">
-            <h4>Kekurangan Berat Badan</h4>
+            <h4>Berat Badan Kurang</h4>
             <p>&lt; 18.5</p>
         </div>
 
         <div style="--color: var(--normal)">
-            <h4>Normal</h4>
-            <p>&lt; 18.5 - 24.9</p>
+            <h4>Berat Badan Ideal</h4>
+            <p>18.5 - 25</p>
         </div>
 
         <div style="--color: var(--overweight)">
-            <h4>Kelebihan Berat Badan</h4>
-            <p>&lt; 25 - 29.9</p>
+            <h4>Berat Badan Berlebih</h4>
+            <p>25 - 30</p>
         </div>
 
         <div style="--color: var(--obese)">
-            <h4>Obesitas</h4>
-            <p>&lt; ≥ 30</p>
+            <h4>Berat Badan Obesitas</h4>
+            <p>≥ 30</p>
         </div>
     </section>
 

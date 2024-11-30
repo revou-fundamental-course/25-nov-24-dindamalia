@@ -20,46 +20,47 @@ h1 {
     text-align: center ;
 } 
 
-.judul{
+.container{
     width: 90%;
     max-width: 500px;
     background: #FFFFFF;
-    padding: 3rem;
+    padding: 4rem;
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 25);
     display: grid;
     gap:1rem;
 }
 
-.jeniskelamin {
+.gender {
     font-weight: 600;
 }
-.kalkulator {
+.calculator {
     display: grid;
     gap: 1rem;
 }
 
-.kalkulator div {
+.calculator div {
     display:flex ;
     align-items: center;
     gap: 1rem;
 }
 
-.kalkulator label{
+.calculator label{
     flex: 0 1 120px;
     font-weight: 600;
 }
 
-.kalkulator input {
+.calculator input {
     flex: 1;
     border: 1px solid #CCC;
+    border-radius: 5px;
     padding: 10px;
     outline-color: #555;
     font-size:1.25rem;
     text-align: center;
 }
 
-.kalkulator button {
+.calculator button {
     width: 50%;
     border-radius: 5px;
     border: none;
@@ -70,37 +71,54 @@ h1 {
     letter-spacing: 1px;
 }
 
-.kalkulator button[type="reset"] {
+.calculator button[type="submit"] {
     background: #444;
     color:#FFFFFF;
 }
 
-.hasil {
+.output {
     text-align: center;
 }
 
-.hasil #bmi {
+.output #bmi {
     font-size: 4rem;
 }
 
-.hasil #desc strong {
+.output #desc strong {
     text-transform: uppercase;
 }
 
-.skala-bmi {
+.bmi-scale {
     display: flex;
 }
 
-.skala-bmi div{
+.bmi-scale div{
     flex: 1;
     text-align: center;
     text-transform: uppercase;
     border-top: 5px solid var(--color);
+    padding: 10px;
 }
 
-.skala-bmi h4 {
+.bmi-scale h4 {
     font-size: 0.75rem;
     color: #708090;
+}
+
+.underweight {
+    color: var(--underweight) ;
+}
+
+.healthy {
+    color: var(--normal) ;
+}
+
+.overweight {
+    color: var(--overweight) ;
+}
+
+.obese {
+    color: var(--obese) ;
 }
 
 footer {
