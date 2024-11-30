@@ -1,1 +1,109 @@
 /*Ini File CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --underweight: yellow;
+    --normal:green;
+    --overweight:orange;
+    --obese:red;
+}
+* {
+    font-family: "Josh", sans-serif;
+}
+body {
+    background: #778899;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+h1 {
+    text-align: center ;
+} 
+
+.judul{
+    width: 90%;
+    max-width: 500px;
+    background: #FFFFFF;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 25);
+    display: grid;
+    gap:1rem;
+}
+
+.jeniskelamin {
+    font-weight: 600;
+}
+.kalkulator {
+    display: grid;
+    gap: 1rem;
+}
+
+.kalkulator div {
+    display:flex ;
+    align-items: center;
+    gap: 1rem;
+}
+
+.kalkulator label{
+    flex: 0 1 120px;
+    font-weight: 600;
+}
+
+.kalkulator input {
+    flex: 1;
+    border: 1px solid #CCC;
+    padding: 10px;
+    outline-color: #555;
+    font-size:1.25rem;
+    text-align: center;
+}
+
+.kalkulator button {
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #DCDCDC;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kalkulator button[type="reset"] {
+    background: #444;
+    color:#FFFFFF;
+}
+
+.hasil {
+    text-align: center;
+}
+
+.hasil #bmi {
+    font-size: 4rem;
+}
+
+.hasil #desc strong {
+    text-transform: uppercase;
+}
+
+.skala-bmi {
+    display: flex;
+}
+
+.skala-bmi div{
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+}
+
+.skala-bmi h4 {
+    font-size: 0.75rem;
+    color: #708090;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10%;
+}
