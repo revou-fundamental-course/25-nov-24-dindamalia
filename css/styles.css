@@ -105,19 +105,19 @@ h1 {
     color: #708090;
 }
 
-.underweight {
+.kurang {
     color: var(--underweight) ;
 }
 
-.healthy {
+.ideal {
     color: var(--normal) ;
 }
 
-.overweight {
+.berlebih {
     color: var(--overweight) ;
 }
 
-.obese {
+.obesitas {
     color: var(--obese) ;
 }
 
